@@ -1,0 +1,192 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+p{
+    font-size: 1.3em;
+
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;   
+    position: sticky; 
+    top: 0;
+    background-color: #F7F7F7;
+    box-shadow: 1px 2px 2px rgba(34, 34, 34, 0.075);
+}
+
+.menu{
+    display: flex;  
+    height: 45px;   
+    align-items: center;
+  
+}
+
+.menu span{
+    font-family: 'Amatic SC', cursive;
+}
+
+.menu a{
+    justify-content: space-between;
+    color: #131313;
+    font-size: 1.6em;
+    margin-right: 20px;
+    padding: 8px 15px 8px 15px;
+    align-items: center; 
+}
+
+.menu i{
+    margin-right: 10px;
+
+}
+
+.contatos{
+    background-color: #afafaf;
+    border-radius: 40px;
+    color: white;
+}
+
+.contatos:hover{
+    background-color: #cececed7;
+    color: black;
+    transition-duration: .3s;
+}
+
+h1{
+    font-size: 2.2em;
+    margin-left: 30px;
+    cursor: pointer;
+    font-family: 'Supermercado One', cursive;
+
+}
+
+h2{
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 2em;
+}
+
+h2::after{
+    content: "";
+    width: 400px;
+    height: 2px;
+    background-color: black;
+    margin: auto;
+    display: block;
+
+}
+
+.menu a:hover{
+    text-decoration: underline;
+    
+}
+
+main{
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+section{
+    padding-top: 4rem;
+    
+}
+
+.sobremim{
+    display: flex;
+    max-width: 800px;
+    align-items: center;
+}
+
+.sobremim img{
+    display: flexbox;
+    max-width: 400px;
+
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.conhecimentos{
+    display: flex;
+    max-width: 400px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+
+}
+
+.conhecimentos img{
+    display: flex;
+    margin-right: 20px;
+    max-width: 150px;
+}
+
+.contatoinf{
+    margin: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contatoinf li{
+    font-size: 1.2em;
+    
+
+}
+
+.contatoinf a{
+    color: rgb(0, 0, 0);
+    text-decoration:underline;
+}
+
+.contatoinf i{
+    margin-right: 5px;
+}
+
+@media (max-width:650px){
+    .menu span{
+        display: none;
+    }
+
+    .sobremim img{
+        max-width: 200px;
+    }
+
+    .menu a{
+        padding: 10px 10px;
+        background-color: transparent;
+        border-radius: 40px;
+
+    }
+    .contatos:hover{
+        background-color: transparent;
+    }
+
+  
+}
