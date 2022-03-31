@@ -36,6 +36,7 @@ html{
     border: 2px solid rgba(180, 180, 180, 0.192);
     padding: 10px;
     animation: animaButton 2s ease alternate infinite;
+    user-select: none;
 }
 
 nav{
