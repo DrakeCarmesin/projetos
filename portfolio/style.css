@@ -155,8 +155,13 @@ section{
 #rep{
     color: black;
     list-style: none;
-    font-size: 1.3em;
-    padding: 10px;
+    font-size: 1.2em;
+    
+
+}
+
+#rep:hover{
+    text-decoration: underline;
 }
 
 
@@ -164,11 +169,14 @@ section{
     margin: 5px;
     background-image:  url(img/cafeteria.JPG);
     height: 240px;
-    max-width: 400px;
+    width: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     
     
 }
@@ -183,16 +191,22 @@ section{
 
 }
 
-#cafe a{
-    position: absolute;
-    top: 30%;
-    left: 10%;
+
+
+.projetos a{
+
     color: black;
     display: none;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10%;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;  
+}
 
+#cafe a{
+    padding: 100px 18px;
+}
+
+#game a{
+    padding: 100px 40px;
 }
 
 
@@ -200,11 +214,14 @@ section{
     margin: 5px;
     background-image: url(img/game.JPG);
     height: 240px;
-    max-width: 400px;
+    width: 400px;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
     
 }
 
@@ -215,18 +232,6 @@ section{
 
 #game:hover a{
     display: block;
-}
-
-
-#game a{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    display: none;
-    color: black;
-    font-size: 1.2em;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 10px;
 }
 
 .contatoinf{
@@ -245,7 +250,11 @@ section{
 
 .contatoinf a{
     color: rgb(0, 0, 0);
-    text-decoration:underline;
+    text-decoration:none;
+}
+
+.contatoinf a:hover{
+    text-decoration: underline;
 }
 
 .contatoinf i{
@@ -256,9 +265,15 @@ section{
     .projetos{
         display: grid;
         grid-template-columns: none;
-        width: 50%;
-        align-items: center;
-        margin: auto;
+        justify-content: center;
+        
+        
+       
+    }
+
+    #rep{
+        margin-left: 40%;
+        
     }
 
 
@@ -266,7 +281,7 @@ section{
 
 }
 
-@media (max-width:650px){
+@media (max-width:770px){
     .menu span{
         display: none;
     }
