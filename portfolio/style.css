@@ -151,7 +151,6 @@ section{
 
 .projetos{
     margin-top: 10px;
-    margin-left: 10px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -306,9 +305,6 @@ section{
         background-color: transparent;
     }
 
-    body{
-        margin-left: 10px;
-    }
 
   
 }
