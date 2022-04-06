@@ -305,6 +305,9 @@ section{
         background-color: transparent;
     }
 
+    body{
+        margin-left: 10px;
+    }
 
   
 }
