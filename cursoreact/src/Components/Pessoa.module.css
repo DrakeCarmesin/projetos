@@ -1,0 +1,9 @@
+.PessoaContainer p{
+  color: pink;
+  background-color: pink;
+}
+
+.PessoaContainer{
+    background-color: bisque;
+    margin: auto;
+}
